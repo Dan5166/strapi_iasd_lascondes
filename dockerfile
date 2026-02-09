@@ -6,7 +6,7 @@ RUN apk update && apk add --no-cache \
 
 WORKDIR /opt/app
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 RUN npm install
 
 COPY . .
